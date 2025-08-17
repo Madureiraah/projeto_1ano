@@ -455,3 +455,25 @@ footer {
         backdrop-filter: blur(6px);
     }
 }
+
+@media (max-width: 600px) {
+    .carousel .card {
+        flex: 0 0 95%;
+        max-width: 98vw;
+        padding: 8px;
+    }
+
+    .carousel .card img {
+        width: 100%;
+        height: auto;
+        max-height: 320px;
+        min-height: 180px;
+        object-fit: cover;
+    }
+
+    .carousel-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+}

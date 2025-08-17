@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feliz — 1 Ano 💖</title>
+    <meta
+      name="description"
+      content="Um presente digital romântico com animações para celebrar 1 ano de namoro."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/1ano.css" />
+  </head>
+  <body>
+    <header class="nav" role="navigation" aria-label="Navegação principal">
+      <div class="container">
+        <div class="brand" aria-label="Marca">
+          <svg
+            class="heart"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 21s-7-4.35-9.5-8.1C.42 10.11 1.62 6.5 4.9 6.07 7 5.8 8.77 7.09 9.64 8.5c.87-1.41 2.64-2.7 4.74-2.43 3.29.43 4.49 4.04 2.4 6.82C19 16.65 12 21 12 21Z"
+              fill="url(#g)"
+            ></path>
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#ff4d7e" />
+                <stop offset="1" stop-color="#7bd7ff" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>Eu & Você</span>
+        </div>
+        <div class="actions">
+          <button
+            class="btn alt"
+            onclick="document.querySelector('#galeria').scrollIntoView({behavior:'smooth'})"
+          >
+            Fotos
+          </button>
+          <button
+            class="btn"
+            onclick="document.querySelector('#timeline').scrollIntoView({behavior:'smooth'})"
+          >
+            Nossa história
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-labelledby="tit-hero">
+      <div class="heart-fx" aria-hidden="true" id="hearts"></div>
+      <div class="container hero-inner">
+        <span class="pill" role="note"
+          >Primeiro de muitos <strong>-</strong><strong>Feliz 1 ano</strong></span
+        >
+        <h1 class="title" id="tit-hero">
+          <span class="love" id="type">Eu te amo</span
+          ><span aria-hidden="true"> ❤️</span>
+        </h1>
+        <p class="subtitle">
+          Obrigado por cada risada, cada abraço e cada momento, e além diso, obrigado por compartilhar a sua vida comigo.<br>
+          <br><strong>Um presentinho diferente dos iguais:</strong>
+        </p>
+        <div class="cta-row" role="group" aria-label="Ações principais">
+          <button class="btn" id="btnContinuar" aria-describedby="dica">
+            Continuar <span aria-hidden>→</span>
+          </button>
+          <button class="btn alt" id="btnMusica" aria-pressed="false">
+            Tocar música
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA COM CARROSSEL -->
+    <section id="galeria" aria-labelledby="tit-galeria">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 id="tit-galeria">Nossos momentos 📸</h2>
+            <p class="section-sub">
+              Recordações dos nossos melhores momentos
+            </p>
+          </div>
+          <button
+            class="btn alt"
+            onclick="document.querySelector('#timeline').scrollIntoView({behavior:'smooth'})"
+          >
+            Próximo: Nossa história
+          </button>
+        </div>
+
+        <div class="carousel" id="carousel">
+          <div class="carousel-track">
+            <figure class="card">
+              <img
+                src="images/comeco.jpeg"
+                alt="começo de tudo"
+              />
+              <figcaption class="cap">A foto onde tudo começou</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="images/primeiro-role.jpeg" alt="Primeiro role" />
+              <figcaption class="cap">
+                Primeiro role, Duda ajudou muito a gnt
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="images/primeira-casa.jpeg" alt="Primeira vez na sua casa" />
+              <figcaption class="cap">
+                Primeira vez vendo o sogrão, deu medo
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="images/primeira-viagem.jpeg" alt="primeira viagem" />
+              <figcaption class="cap">
+                Nossa primeira viagem, e memso sendo breve, foi uma das melhores
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img
+                src="images/primeiro-carnaval.jpeg"
+                alt="primeiro carnaval"
+              />
+              <figcaption class="cap">
+                Primeiro carnaval juntos, depois de quase não irmos kkk
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img
+                src="images/primeiro-show.jpeg"
+                alt="primeiro show"
+              />
+              <figcaption class="cap">
+                Nosso primeiro show, que além disso foi o meu primeiro (foi
+                muito bomm)
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img
+                src="images/foto-preferida.jpeg"
+                alt="Minha foto preferida"
+              />
+              <figcaption class="cap">
+                Minha foto preferida, nos estamos divos
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img
+                src="images/aleatoria-preferida.jpeg"
+                alt="Foto aleatória preferida"
+              />
+              <figcaption class="cap">
+                Por mais que seja aleatória, é uma das minhas preferidas
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img
+                src="images/minha-preferida.jpeg"
+                alt="Minha foto preferida"
+              />
+              <figcaption class="cap">
+                E não poderia faltar a minha foto preferida de você
+              </figcaption>
+            </figure>
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+          <button class="carousel-btn next" aria-label="Próxima">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" aria-labelledby="tit-time">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 id="tit-time">Nossa história ⏳</h2>
+            <p class="section-sub">Momentos que tivemos que mais me marcaram</p>
+          </div>
+          <button
+            class="btn alt"
+            onclick="document.querySelector('#carta').scrollIntoView({behavior:'smooth'})"
+          >
+            Próximo: Carta
+          </button>
+        </div>
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-card">
+              <strong>Nosso primeiro encontro</strong>
+              <small>12/04/2024</small>
+              <p>O friozinho na barriga que eu não sentia a muito tempo</p>
+            </div>
+          </div>
+          <div class="t-item reveal">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-card">
+              <strong>Nosso dia 17</strong>
+              <small>17/08/2024</small>
+              <p>Data do dia que tive a mais certeza da minha vida... Você</p>
+            </div>
+          </div>
+          <div class="t-item reveal">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-card">
+              <strong>Nosso primeiro show e o melhor de todos</strong>
+              <small>04/03/2025</small>
+              <p>
+                Foi a minha primeira vez em um show e melhor ainda, ao lado da
+                melhor pessoa do mundo
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section id="carta" aria-labelledby="tit-carta">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 id="tit-carta">Uma carta para você 💌</h2>
+            <p class="section-sub">
+              Um pedacinho de mim, quando você quiser
+            </p>
+          </div>
+          <button
+            class="btn alt"
+            onclick="document.querySelector('#inicio').scrollIntoView({behavior:'smooth'})"
+          >
+            Voltar ao início
+          </button>
+        </div>
+        <div class="letter">
+          <div class="paper reveal" id="texto-carta">
+            <p>Minha princesa,</p>
+            <p>
+              Nem parece que um pouco mais de um ano atrás nós mal
+              conversavamos, o tempo passa muito rápido, nem parece que temos 1
+              ano kkkkk, ainda não caiu a fixa, imaginar que eu tenho uma pessoa
+              maravilhosa como você do meu lado e que, principalmente, eu posso
+              chamar de meu amor.
+            </p>
+
+            <p>
+              Se a um pouco mais de um ano alguém me falasse que eu iria
+              encontrar alguém como você, eu nunca iria acreditar, na verdade
+              nem sabia que alguém podia ser assim, tão carinhosa e ao mesmo
+              tempo capaz de me inspirar a ser a melhor versão de mim mesmo, até
+              porque nem eu acreditava mais em mim. Você é a pessoa mais
+              incrível que eu já conheci, e a cada dia que passa eu tenho mais e
+              mais certezas que voce é a minha maior certeza. Sua bondade, sua
+              inteligência, seu jeito de ver o mundo e claro sua gostosura ,eita
+              muié maravilhosa, me fazem querer te querer cada vez mais.
+            </p>
+
+            <p>
+              Eu amo como você me faz rir, como você me entende sem eu precisar
+              dizer uma palavra, e como você sempre sabe o que fazer para me
+              deixar feliz. Você é a minha melhor amiga, a minha namorada e, se
+              deus quiser, a minha futura esposa e mãe dos meus filhos. Eu
+              também amo como você me faz querer ser uma pessoa melhor, como
+              você me inspira a lutar pelos meus sonhos e a nunca desistir.
+            </p>
+            <p>
+              Obrigado por cada momento que passamos juntos, por cada risada,
+              cada abraço e cada beijo. Obrigado por me fazer sentir amado e
+              especial todos os dias. obrigado também por me fazer sentir
+              seguro, por me fazer sentir que posso ser eu mesmo ao seu lado e
+              além disso fazer parte da melhor parte do meu dia.
+            </p>
+            <p>
+              Também queria deixar claro mais uma vez o quantio você é perfeita,
+              a mais maravilhosa de todas, a mais diva, a mais gostosa a mais
+              tudo. sinceramente, não consigo descrever o que eu sinto, é algo que
+              só eu consigo entender, pode parecer exagerado ou sla, mas não tem
+              como alguém possuir tamanha perfeição igual você, você é a mais
+              mais.
+            </p>
+            <p>
+              Enfim obrigado por ser casa, por ser paz e por ser também a melhor parte
+              do meu dia. Que venham muitos outros capítulos, porque com você eu
+              quero escrever uma história inteira.
+            </p>
+            <p>Com amor,</p>
+            <p><strong>Seu namorado 💖</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          flex-wrap: wrap;
+        "
+      >
+        <small>Feito com amor, Gabriel • 16/08/2025</small>
+        <small> Eu te amo💖💖💖</small
+        >
+      </div>
+    </footer>
+
+    <audio id="player" preload="auto" src="audio/musica.mp3"></audio>
+    <script src="js/1ano.js"></script>
+  </body>
+</html>

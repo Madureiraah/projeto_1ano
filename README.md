@@ -1,1 +1,1 @@
-Cartuinha diferenciada para o meu amor
+Cartinha diferenciada para o meu amor
